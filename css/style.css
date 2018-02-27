@@ -115,6 +115,17 @@ body {
     color: black;
 }
 
+.browse-button-dropdown   {
+    padding: 0px 25px 20px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    background-color: white;
+    position: relative;
+    left: -80px;
+    top: 60px;
+    /*display: none;*/
+
+}
 
 .search_form {
     display: flex;
@@ -309,6 +320,11 @@ body {
     text-transform: uppercase;
 }
 
+.my-account-area {
+    position: relative;
+    left: 407px;
+}
+
 .my-account {
     color: #ffffff;
     font-family: Lato;
@@ -322,6 +338,16 @@ body {
     background-color: #f16d7f;
     text-align: center;
     padding-top: 0px;
+}
+
+.my-account-menu{
+    position: absolute;
+    top: 35px;
+    left: -16px;
+    width: 265px;
+    background-color: white;
+    /*display: none;*/
+
 }
 
 .nav_flex {
