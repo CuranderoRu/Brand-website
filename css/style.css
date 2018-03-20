@@ -21,6 +21,19 @@
     font-style: normal;
 }
 
+
+@font-face {
+
+    font-family: "Lato - Black";
+
+    src: url('../fonts/Lato-Black.ttf') format('truetype');
+
+    font-weight: normal;
+
+    font-style: normal;
+}
+
+
 @font-face {
 
     font-family: "Lato - Black";
@@ -35,6 +48,10 @@
 
 .container {
     width: 1142px;
+    margin: 0 auto;
+}
+
+.container_big {
     margin: 0 auto;
 }
 
@@ -671,46 +688,51 @@ ul.mega-menu__items a:hover {
 .slider_container {
     display: flex;
     height: 148px;
-    width: 1600px;
-    margin: 0 auto;
     background-color: #f8f3f4;
     justify-content: space-between;
-
+    margin: 0 auto;
 }
 
 .slider_place {
-    height: 18px;
+    height: 148px;
+    line-height: 136px;
     color: #f16d7f;
     font-family: "Lato - Black";
     font-size: 24px;
     font-weight: 400;
-    line-height: 20px;
     text-transform: uppercase;
-    margin: 65px 0 0 228px;
 }
 
 .breadcrumbs {
-    height: 11px;
     font-family: Lato;
     font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
     text-transform: uppercase;
+}
+
+.breadcrumbs a {
+    height: 148px;
+    line-height: 148px;
+    font-weight: 700;
     color: #636363;
     font-weight: 300;
-    margin: 69px 312px 0 0;
+    text-decoration: none;
 }
+
 
 .breadcrumbs span {
     font-weight: 700;
     color: #f16d7f;
 }
 
+.cart_table {
+    width: 1137px;
+    margin-top: 90px;
+
+}
+
 .table_header {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    height: 12px;
+    height: 32px;
+    vertical-align: top;
     color: #222222;
     font-family: Lato;
     font-size: 13px;
@@ -718,6 +740,483 @@ ul.mega-menu__items a:hover {
     line-height: 20px;
     text-transform: uppercase;
     letter-spacing: -0.2px;
-    list-style-type: none;
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
 }
 
+.table_header_product {
+    width: 40%;
+    text-align: left;
+}
+
+.tData_product {
+    margin: 0 auto;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+    height: 162px;
+    color: #656565;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.tData_product_container {
+    margin: 0 left;
+    display: flex;
+}
+
+.tData_product_textblock {
+    margin-left: 21px;
+}
+
+.tData_product_name {
+    color: #222222;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tData_product_details {
+    margin-top: 38px;
+    color: #6f6e6e;
+    font-family: Lato;
+    font-size: 13px;
+    color: #575757;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.tData_product_details span {
+    font-weight: 300;
+    margin-left: 6px;
+}
+
+
+.tData {
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+    height: 162px;
+    color: #656565;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.tData_Action {
+    width: 15px;
+    color: #c0c0c0;
+    font-family: "Font Awesome";
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.item_quantity_input {
+    /* Style for "Rectangle" */
+    width: 54px;
+    height: 30px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.cart_btns {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cart_button {
+    width: 235px;
+    height: 50px;
+    line-height: 57px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cart_button a {
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.cart_checkout {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 63px;
+    color: #222222;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cart_shipping_address {
+    width: 355px;
+    display: block;
+    text-align: left;
+    margin-right: 36px;
+}
+
+.class_checkout_form {
+    line-height: 4;
+}
+
+.form_element {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #b1b1b1;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.class_checkout_form label {
+    color: #000000;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: none;
+}
+
+.class_checkout_form button {
+    width: 100px;
+    height: 35px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cart_coupon_discount {
+    width: 355px;
+}
+
+.cart_total {
+    width: 360px;
+    height: 214px;
+    background-color: #f5f3f3;
+    margin-left: 36px;
+}
+
+#cart_subtotal {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 273px;
+    height: 26px;
+    line-height: 26px;
+    text-align: right;
+    color: #4a4a4a;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#cart_subtotal span {
+    margin-left: 20px;
+}
+
+
+
+#cart_total {
+    margin: 0 auto;
+    width: 273px;
+    height: 38px;
+    line-height: 38px;
+    text-align: right;
+    color: #222222;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#cart_total span {
+    color: #f16d7f;
+    margin-left: 20px;
+}
+
+
+#cart_checkout {
+    width: 273px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+
+.subscribe_block {
+    height: 438px;
+    background-image: url(/img/subscribe_back.png);
+    background-repeat: round;
+}
+
+.subscribe_slider {
+    justify-content: space-between;
+    display: flex;
+}
+
+.subscribe_article {
+    width: 570px;
+    display: flex;
+}
+
+.subscribe_comment {
+    width: 386px;
+    display: block;
+}
+
+.subscribe_img_block {
+    margin-top: 111px;
+}
+
+.subscribe_img_block img {
+    width: 83px;
+    height: 83px;
+}
+
+.subscribe_comment {
+    margin-top: 123px;
+    margin-left: 28px;
+}
+
+.subscribe_author {
+    /* Style for "Bin Burhan" */
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    line-height: 26px;
+}
+
+.subscribe_author span {
+    color: #222224;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    line-height: 14px;
+}
+
+
+.subscribe_text {
+    color: #222224;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+}
+
+.subscribe_subdiv {
+    margin: 0 auto;
+    margin-top: 138px;
+}
+
+.subscribe_capture {
+    color: #222224;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    /* Text style for "Subscribe" */
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    line-height: 54px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.subscribe_capture2 {
+    color: #222224;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.35px;
+    line-height: 24px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.subscribe_form input {
+    margin: 0;
+    margin-top: 35px;
+    width: 334px;
+    height: 46px;
+    border: 0;
+    border-radius: 23px 0 0 23px;
+    background-color: #e1e1e1;
+    opacity: 0.67;
+    color: #222224;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 39px;
+    padding-left: 28px;
+}
+
+.subscribe_form button {
+    margin: -4px;
+    width: 104px;
+    height: 48px;
+    border: 0;
+    border-radius: 0 23px 23px 0;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 39px;
+}
+
+.footer_top {
+    display: flex;
+    align-items: center;
+
+}
+
+.footer {
+    margin: 0 auto;
+    width: 1150px;
+    margin-top: 109px;
+    display: flex;
+    justify-content: space-between
+}
+
+
+.section_terms {
+    display: flex;
+
+}
+
+.about_brand {
+    display: block;
+    width: 428px;
+}
+
+.shop_text {
+    width: 428px;
+    height: 188px;
+    overflow: hidden;
+    color: #898989;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+}
+
+.footer_list {
+    list-style-type: none;
+    width: 228px;
+
+
+}
+
+.footer_list_top {
+    width: 100%;
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+
+.footer_list li a {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    /* Text style for "Home" */
+    letter-spacing: 0.4px;
+    line-height: 42px;
+    color: #898989;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 89px;
+    height: 79px;
+    background-color: #e6e6e6;
+}
+
+.copyright_text {
+    color: #7a7a7a;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 79px;
+    letter-spacing: 0.4px;
+    justify-content: space-between;
+}
+
+.social_nets {
+    display: flex;
+    line-height: 35px;
+    margin-top: 24px;
+    justify-content: space-between;
+    width: 152px;
+}
+
+.social_nets_block {
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: "Font Awesome";
+}
+
+.facebook {
+    color: #b2b2b2;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.twitter{
+    background-color: #f16d7f;
+    color: #f7f7f8;
+}
+
+.instagram{
+    background-color: #ededed;
+    color: #dbdbdb;
+}
+
+.google_plus{
+    background-color: #ffffff;
+    color: #b2b2b2;
+}

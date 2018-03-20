@@ -6,13 +6,13 @@
     <title>BRAND</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script defer src="fonts/fontawesome-free-5.0.6/svg-with-js/js/fontawesome-all.js"></script>
+    <script defer src="fonts/fontawesome-free-5.0.8/svg-with-js/js/fontawesome-all.js"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="container header_top">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img src="img/logo.png" alt="logo">
             </a>
             <div class="shop_name">
@@ -113,8 +113,8 @@
     <nav>
         <div class="container">
             <ul class="nav_flex">
-                <li><a class="link_active" href="#">Home</a></li>
-                <li><a href="#">Man</a>
+                <li><a class="link_active" href="index.html">Home</a></li>
+                <li><a href="man.html">Man</a>
                 </li>
                 <li><a href="#">Women</a>
                     <div class="mega-menu">
@@ -170,21 +170,205 @@
             </ul>
         </div>
     </nav>
-    <div class="slider_container">
+    <div class="container_big slider_container">
+        <div class="container slider_container">
             <div class="slider_place">New Arrivals </div>
-            <div class="breadcrumbs">Home / Men / <span>New Arrivals</span></div>
+            <nav class="breadcrumbs">
+                <a href="index.html">HOME</a> / <a href="man.html">Man</a> / <span>New Arrivals</span>
+            </nav>
+        </div>
     </div>
-       <ul class="header_top table_header">
-           <li>Product Details</li>
-           <li>unite Price</li>
-           <li>Quantity</li>
-           <li>shipping</li>
-           <li>Subtotal</li>
-           <li>ACTION</li>
-       </ul>
-    
-    <footer>
+    <section class="container">
+        <table class="cart_table">
+            <tr>
+                <th class="table_header table_header_product">Product Details</th>
+                <th class="table_header">unit Price</th>
+                <th class="table_header">Quantity</th>
+                <th class="table_header">shipping</th>
+                <th class="table_header">Subtotal</th>
+                <th class="table_header">ACTION</th>
+            </tr>
+            <tr>
+                <td class="tData_product">
+                    <div class="tData_product_container">
+                        <img src="/img/cart_pic_1.jpg" alt="good photo">
+                        <div class="tData_product_textblock">
+                            <div class="tData_product_name">Mango People T-shirt</div>
+                            <div class="tData_product_details">
+                                Color:<span>Red</span>
+                                <br> Size:
+                                <span>Xll</span>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="tData">$150</td>
+                <td class="tData">
+                    <form action="">
+                        <input type="number" class="item_quantity_input" pattern="[0-9]{1,3}">
+                    </form>
+                </td>
+                <td class="tData">FREE</td>
+                <td class="tData">$300</td>
+                <td class="tData_Action"><i class="fas fa-times-circle"></i></td>
+            </tr>
+            <tr>
+                <td class="tData_product">
+                    <div class="tData_product_container">
+                        <img src="/img/cart_pic_2.png" alt="good photo">
+                        <div class="tData_product_textblock">
+                            <div class="tData_product_name">Mango People T-shirt</div>
+                            <div class="tData_product_details">
+                                Color:<span>Red</span>
+                                <br> Size:
+                                <span>Xll</span>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="tData">$150</td>
+                <td class="tData">
+                    <form action="">
+                        <input type="number" class="item_quantity_input" pattern="[0-9]{1,3}">
+                    </form>
+                </td>
+                <td class="tData">FREE</td>
+                <td class="tData">$300</td>
+                <td class="tData_Action"><i class="fas fa-times-circle"></i></td>
+            </tr>
+            <tr>
+                <td class="tData_product">
+                    <div class="tData_product_container">
+                        <img src="/img/cart_pic_3.png" alt="good photo">
+                        <div class="tData_product_textblock">
+                            <div class="tData_product_name">Mango People T-shirt</div>
+                            <div class="tData_product_details">
+                                Color:<span>Red</span>
+                                <br> Size:
+                                <span>Xll</span>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="tData">$150</td>
+                <td class="tData">
+                    <form action="">
+                        <input type="number" class="item_quantity_input" pattern="[0-9]{1,3}">
+                    </form>
+                </td>
+                <td class="tData">FREE</td>
+                <td class="tData">$300</td>
+                <td class="tData_Action"><i class="fas fa-times-circle"></i></td>
+            </tr>
+        </table>
+    </section>
+    <section class="container cart_btns">
+        <div id="clear_shopping_cart" class="cart_button">cLEAR SHOPPING CART</div>
+        <div class="cart_button"><a href="index.html">cONTINUE sHOPPING</a></div>
+    </section>
+    <section class="container cart_checkout">
+        <div class="cart_shipping_address">Shipping Adress
+            <br>
+            <form action="" class="class_checkout_form">
+                <select name="country" id="shipping_country" class="form_element">
+                    <option value="Bangladesh">Bangladesh</option>
+                </select>
+                <br>
+                <input type="text" id="shipping_address" placeholder="State" class="form_element">
+                <br>
+                <input type="number" id="shipping_postcode" placeholder="Postcode / Zip" class="form_element">
+                <br>
+                <button>get a quote</button>
+            </form>
+        </div>
+        <div class="cart_coupon_discount">coupon discount
+            <br>
+            <form action="" class="class_checkout_form">
+                <label for="coupon_code">Enter your coupon code if you have one</label>
+                <br>
+                <input type="text" id="coupon_code" placeholder="State" class="form_element">
+                <br>
+                <button>Apply coupon</button>
+            </form>
+        </div>
+        <div class="cart_total">
+            <div id="cart_subtotal">Sub total <span>$900</span></div>
+            <div id="cart_total">GRAND TOTAL <span>$900</span></div>
+            <div id="cart_checkout">proceed to checkout</div>
+        </div>
+    </section>
+    <section class="container_big subscribe_block">
+        <div class="container subscribe_slider">
+            <article class="subscribe_article">
+                <div class="subscribe_img_block"><img src="/img/subscribe_photo1.png" alt=""></div>
+                <div class="subscribe_comment">
+                    <div class="subscribe_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
+                    <div class="subscribe_author">Bin Burhan
+                        <br>
+                        <span>Dhaka, Bd</span></div>
+                </div>
+            </article>
+            <div class="subscribe_subdiv">
+                <div class="subscribe_capture">Subscribe</div>
+                <div class="subscribe_capture2">FOR OUR NEWLETTER AND PROMOTION</div>
+                <div>
+                    <form action="" class="subscribe_form">
+                        <input type="text" placeholder="Enter Your Email">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="container_big">
+        <section class="section_terms footer">
+            <div class="about_brand">
+                <div class="footer_top">
+                    <a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
+                    <div class="shop_name">
+                        BRAN<span>D</span>
+                    </div>
+                </div>
+                <div class="shop_text">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. <br><br>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize. <br> Objectively strategize seamless relationships via resource sucking testing procedures. Proactively cultivate next-generation results for value-added methodologies. Dynamically plagiarize unique methodologies after performance based methodologies. Monotonectally empower stand-alone mindshare rather than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy. Compellingly envisioneer corporate methods of empowerment before standards compliant technologies. Objectively facilitate progressive.</div>
+            </div>
+            <ul class="footer_list">
+                <li class="footer_list_top">COMPANY</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="footer_list">
+                <li class="footer_list_top">INFORMATION</li>
+                <li><a href="#">Tearms & Condition</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">How to Buy</a></li>
+                <li><a href="#">How to Sell</a></li>
+                <li><a href="#">Promotion</a></li>
+            </ul>
+            <ul class="footer_list">
+                <li class="footer_list_top">SHOP CATEGORY</li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Child</a></li>
+                <li><a href="#">Apparel</a></li>
+                <li><a href="#">Brows All</a></li>
+            </ul>
 
+        </section>
+        <section class="copyright">
+            <div class="footer">
+                <div class="copyright_text">© 2017 Brand All Rights Reserved.</div>
+                <div class="social_nets">
+                    <a href="https://www.facebook.com/" class="social_nets_block facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com/" class="social_nets_block twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/" class="social_nets_block instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="plus.google.com" class="social_nets_block google_plus"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
+
+                </div>
+            </div>
+        </section>
     </footer>
 </body>
 
