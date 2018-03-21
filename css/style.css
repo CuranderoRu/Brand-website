@@ -445,11 +445,13 @@ body {
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
+    text-align: left;
+    padding-left: 25px;
 }
 
 ul.mega-menu__items {
     list-style-type: none;
-    padding: 0;
+    padding-left: 25px;
     /*width: 100px;
     height: 234px;*/
     color: #646464;
@@ -458,7 +460,7 @@ ul.mega-menu__items {
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0.35px;
-
+    text-align: left;
 }
 
 ul.mega-menu__items a {
